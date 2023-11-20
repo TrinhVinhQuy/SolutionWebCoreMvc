@@ -1,0 +1,193 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\.package-lock.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\asap\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\dezalgo\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\hexoid\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\imagemagick\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\types.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\benchmark\node-static-0.3.0.txt" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\test\fixtures\empty.css" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\test\fixtures\hello.txt" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\test\fixtures\index.html" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\test\fixtures\there\index.html" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\once\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\package.json" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\test\idleness.txt" />
+    <Content Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wrappy\package.json" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Repositories\Repositories.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\.bin\mime" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\.bin\mime.cmd" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\.bin\mime.ps1" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\.bin\static" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\.bin\static.cmd" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\.bin\static.ps1" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\asap\asap.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\asap\browser-asap.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\asap\browser-raw.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\asap\CHANGES.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\asap\LICENSE.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\asap\raw.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\asap\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\examples\normal-usage.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\examples\safe-string.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\colors.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\custom\trap.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\custom\zalgo.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\extendStringPrototype.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\index.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\maps\america.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\maps\rainbow.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\maps\random.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\maps\zebra.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\styles.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\system\has-flag.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\lib\system\supports-colors.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\safe.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\themes\generic-logging.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\dezalgo\dezalgo.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\dezalgo\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\dezalgo\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\dist\helpers\firstValues.cjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\dist\helpers\readBooleans.cjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\dist\index.cjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\dist\parsers\JSON.cjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\dist\parsers\Multipart.cjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\dist\parsers\OctetStream.cjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\dist\parsers\Querystring.cjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\dist\parsers\StreamingQuerystring.cjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\Formidable.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\FormidableError.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\helpers\firstValues.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\helpers\readBooleans.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\index.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\parsers\Dummy.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\parsers\index.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\parsers\JSON.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\parsers\Multipart.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\parsers\OctetStream.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\parsers\Querystring.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\parsers\StreamingQuerystring.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\PersistentFile.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\plugins\index.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\plugins\json.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\plugins\multipart.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\plugins\octetstream.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\plugins\querystring.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\formidable\src\VolatileFile.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\hexoid\dist\index.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\hexoid\dist\index.min.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\hexoid\dist\index.mjs" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\hexoid\license" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\hexoid\readme.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\imagemagick\.npmignore" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\imagemagick\imagemagick.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\imagemagick\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\imagemagick\test-crop.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\imagemagick\test.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\.npmignore" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\CHANGELOG.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\cli.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\mime.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\src\build.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\mime\src\test.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\.travis.yml" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\example\parse.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\index.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\readme.markdown" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\bool.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\dash.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\default_bool.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\dotted.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\long.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\num.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\parse.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\parse_modified.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\short.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\minimist\test\whitespace.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\bin\cli.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\examples\file-server.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\lib\node-static.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\lib\node-static\util.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\node-static\test\integration\node-static-test.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\once\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\once\once.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\once\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\.travis.yml" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\bool.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\boolean_double.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\boolean_single.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\default_hash.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\default_singles.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\divide.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\line_count.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\line_count_options.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\line_count_wrap.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\nonopt.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\reflect.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\short.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\string.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\usage-options.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\example\xup.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\index.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\readme.markdown" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\dash.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\parse.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\parse_modified.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\short.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\usage.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\whitespace.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\_.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\_\argv.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\optimist\test\_\bin.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\example\center.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\example\meat.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\index.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\README.markdown" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\test\break.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wordwrap\test\wrap.js" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wrappy\LICENSE" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wrappy\README.md" />
+	  <None Include="wwwroot\admin\js\file-uploader\server\node\node_modules\wrappy\wrappy.js" />
+	</ItemGroup>
+	<ItemGroup>
+	  <TypeScriptCompile Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\index.d.ts" />
+	  <TypeScriptCompile Include="wwwroot\admin\js\file-uploader\server\node\node_modules\colors\safe.d.ts" />
+	  <TypeScriptCompile Include="wwwroot\admin\js\file-uploader\server\node\node_modules\hexoid\hexoid.d.ts" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,118 @@
+﻿@model IEnumerable<Business.Models.NewsCategory>
+
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+	/* .hiddien{
+		display: none;
+	} */
+</style>
+<div class="card card-body container-fluid">
+	@{
+		if (TempData["Fail"] != null)
+		{
+			<div id="alertBox" class="alert alert-danger">
+				@TempData["Fail"]
+			</div>
+		}
+	}
+	<table class="table">
+		<thead>
+			<tr>
+				<th style="width: 60%">
+					Tên
+				</th>
+				<th style="width: 40%">#</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td>
+						<a href="#" onclick="updateModal(@Html.DisplayFor(modelItem => item.Id),'@Html.DisplayFor(modelItem => item.Name)')" data-toggle="modal" data-target="#exampleModal">
+							Chi tiết
+						</a> |
+						<a href="#" onclick="confirmDelete(@Html.DisplayFor(modelItem => item.Id))">
+							Xoá
+						</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+	<button type="button" class="btn btn-primary" onclick="Add()" data-toggle="modal" data-target="#exampleModal">
+		Thêm
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form id="Form" method="post" asp-controller="" asp-action="Index">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Thêm loại tin tức</h5>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Tên</label>
+							<input type="text" id="modalName" class="form-control" oninput="checkNameValue()" required="required" name="name" />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+						<button type="submit" id="btnSave" class="btn btn-primary hidden" onclick="submitForm()">Lưu</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+@section Scripts{
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		let _id = "", _status = "add", _name = "";
+		function updateModal(id, text) {
+			$("#modalName").val(text);
+			_id = id;
+			_status = "update";
+		}
+		function submitForm() {
+			var url = "admin-news-category?status=" + _status + "&&name=" + $("#modalName").val() + "&&id=" + _id;
+			//alert(url);
+			$("#Form").attr("action", url);
+			$("#Form").submit();
+		}
+		function confirmDelete(id) {
+			var result = confirm("Bạn có chắc chắn muốn xóa không?");
+			if (result) {
+				var url = "admin-news-category?status=delete&&id=" + id;
+				// alert(url);
+				$("#Form").attr("action", url);
+				$("#Form").submit();
+			}
+		}
+		function Add() {
+			$("#modalName").val("");
+			_status = "add";
+			_id = "";
+		}
+		$(function () {
+			$('#alertBox').removeClass('hide');
+			$('#alertBox').delay(5000).slideUp(500);
+		})
+		function checkNameValue() {
+			var nameValue = document.getElementById("modalName").value;
+			if (nameValue.trim() !== "") {
+				document.getElementById("btnSave").classList.remove("hidden");
+			} else {
+				document.getElementById("btnSave").classList.add("hidden");
+			}
+		}
+	</script>
+}
