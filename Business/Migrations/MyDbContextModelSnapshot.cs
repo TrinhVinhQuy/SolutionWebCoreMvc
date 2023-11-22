@@ -152,9 +152,6 @@ namespace Business.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"));
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -173,7 +170,7 @@ namespace Business.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("ProductCategoryCategoryId")
+                    b.Property<int>("ProductCategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("ProductName")
@@ -189,18 +186,18 @@ namespace Business.Migrations
 
                     b.HasKey("ProductId");
 
-                    b.HasIndex("ProductCategoryCategoryId");
+                    b.HasIndex("ProductCategoryId");
 
                     b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Business.Models.ProductCategory", b =>
                 {
-                    b.Property<int>("CategoryId")
+                    b.Property<int>("ProductCategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductCategoryId"));
 
                     b.Property<string>("CategoryName")
                         .IsRequired()
@@ -214,7 +211,7 @@ namespace Business.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("CategoryId");
+                    b.HasKey("ProductCategoryId");
 
                     b.ToTable("ProductCategories");
                 });
@@ -352,7 +349,7 @@ namespace Business.Migrations
                 {
                     b.HasOne("Business.Models.ProductCategory", "ProductCategory")
                         .WithMany("Products")
-                        .HasForeignKey("ProductCategoryCategoryId")
+                        .HasForeignKey("ProductCategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

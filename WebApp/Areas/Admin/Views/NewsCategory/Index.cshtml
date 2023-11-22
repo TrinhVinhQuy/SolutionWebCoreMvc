@@ -1,14 +1,9 @@
 ﻿@model IEnumerable<Business.Models.NewsCategory>
 
 @{
-	ViewData["Title"] = "Index";
+	ViewData["Title"] = "Loại tin tức";
 	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
-<style>
-	/* .hiddien{
-		display: none;
-	} */
-</style>
 <div class="card card-body container-fluid">
 	@{
 		if (TempData["Fail"] != null)

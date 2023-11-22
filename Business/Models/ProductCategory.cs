@@ -11,7 +11,7 @@ namespace Business.Models
 	public class ProductCategory
 	{
 		[Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int CategoryId { get; set; }
+		public int ProductCategoryId { get; set; }
 		[Required]
 		public string CategoryName { get; set; }
 		[Required]

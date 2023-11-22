@@ -20,8 +20,10 @@ namespace Business.Models
 		public string MetaKeyword { get; set; }
 		public string MetaDescription { get; set; }
 		public string SeoUrl { get; set; }
-		public int CategoryId { get; set; }
+
+		public int ProductCategoryId { get; set; }
 		public ProductCategory ProductCategory { get; set; }
+
 		public ICollection<OrdersDetails> ordersDetails { get; set; }
 		public ICollection<ProductImage> Images { get; set; }
 	}
